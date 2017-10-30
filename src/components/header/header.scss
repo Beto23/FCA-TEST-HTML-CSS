@@ -3,15 +3,12 @@ $hamburger: #cd3c33;
 header {
     background-color: $primary-color;
     .header-mobile {
-        position: relative;
         height: 50px;
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
         align-items: center;
         .logo{
-            position: absolute;
-            left: -7px;
-            top: -12px;
+            padding-top: 43px;
         }
         .hamburger{
             margin-right: 1.55em;
@@ -61,9 +58,6 @@ header {
             .navHeader {
                 order: 1;
                 display: flex;
-                width: 100%;
-                margin-left: 76px; 
-                padding: 0 1em;
                 li > a {
                     font-size: 12px;
                     padding: 0 2em;
@@ -71,5 +65,11 @@ header {
                 }
             }
         }
+    }
+}
+
+@media (min-width:1024px) {
+    header {
+        background: red;
     }
 }
