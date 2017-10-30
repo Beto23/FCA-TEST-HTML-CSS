@@ -1,5 +1,53 @@
+$primary-color: #fff;
+$hamburger: #cd3c33;
 header {
+    background-color: $primary-color;
+    .header-mobile {
+        position: relative;
+        height: 50px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        .logo{
+            position: absolute;
+            left: -7px;
+            top: -12px;
+        }
+        .hamburger{
+            margin-right: 1.55em;
+            cursor: pointer;
+            .line{
+                width: 18px;
+                height: 3px;
+                // background-color: #EB4748;
+                background-color: $hamburger;                
+                margin: 3px 0;
+                display: block;
+            }
+        }
+    }
     .navigation {
-        background: red;
+        background: $primary-color;
+        .menu-list {
+            list-style: none;
+            height: 0;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            transition: height .3s ease;
+            li {
+                padding: 1em;
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+        }
+        .menu-list--show {
+            padding: 1em 0 0 0;
+            height: 20em;
+        }
     }
 }

@@ -1,9 +1,20 @@
 header
+    div.header-mobile
+        div.logo
+            img(src="images/logo.png", alt="")
+        div.hamburger#btnHamburger
+            span.line
+            span.line
+            span.line
     nav(class="navigation")
-        ul
-            li Modelos
-            li Prueba de manejo
-            li Cotizar
-            li Promociones
-            li Distribuidoress3
-div(class="alert alert-primary") This is a primary alert—check it out!
+        ul.menu-list#navbarMenu
+            li 
+                a(href="#modelos") Modelos
+            li 
+                a(href="#prueba-manejo") Prueba de manejo
+            li 
+                a(href="#cotizar") Cotizar
+            li 
+                a(href="#promociones") Promociones
+            li 
+                a(href="#distribuidores") Distribuidores

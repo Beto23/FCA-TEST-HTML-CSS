@@ -5,8 +5,16 @@ html(lang='en')
         meta(name='viewport', content='width=device-width, initial-scale=1.0')
         meta(http-equiv='X-UA-Compatible', content='ie=edge')
         title FCA-Test
-        link(rel='stylesheet', href='css/app.css')
         link(rel='stylesheet', href='css/bootstrap.css')        
+        link(rel='stylesheet', href='css/app.css')
     body
-        h1 FCA-Test Fiat
         include components/header/header.pug
+        script(type='text/javascript').
+            var btnHamburger = document.getElementById('btnHamburger');
+            var navbarMenu = document.getElementById('navbarMenu');
+
+            btnHamburger.addEventListener('click', onClickMenu);
+
+            function onClickMenu() {
+                navbarMenu.classList.toggle('menu-list--show');
+            }
