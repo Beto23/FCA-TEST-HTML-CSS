@@ -70,6 +70,12 @@ header {
 
 @media (min-width:1024px) {
     header {
-        background: red;
+        .header-mobile {
+            flex-direction: center;
+            .hamburger {
+                margin-right: 0;
+                margin-left: 2.5em;
+            }
+        }
     }
 }
