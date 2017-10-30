@@ -6,7 +6,7 @@ const browserSync   = require('browser-sync').create();
 
 // Compile Sass & Inject Into Browser
 gulp.task('sass', function(){
-    return gulp.src('./src/app.scss')
+    return gulp.src(['node_modules/bootstrap/scss/bootstrap.scss','./src/app.scss'])
         .pipe(sass({
             outputStyle: 'expended',
             sourceComments: true
