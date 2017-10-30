@@ -1,5 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i|Playfair+Display:400,400i,700,700i,900,900i');
+
 body {
     background: blue;
+    font-family: 'Loto Regular';
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li > a {
+    text-transform: uppercase;
+    font-weight: bold;
+}
 @import 'components/header/header'

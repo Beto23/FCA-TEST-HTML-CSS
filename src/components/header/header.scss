@@ -25,11 +25,13 @@ header {
                 display: block;
             }
         }
+        .navHeader {
+            display: none;
+        }
     }
     .navigation {
         background: $primary-color;
         .menu-list {
-            list-style: none;
             height: 0;
             overflow: hidden;
             display: flex;
@@ -39,15 +41,35 @@ header {
             transition: height .3s ease;
             li {
                 padding: 1em;
-                a {
-                    text-decoration: none;
-                    color: black;
-                }
             }
         }
         .menu-list--show {
             padding: 1em 0 0 0;
             height: 20em;
+        }
+    }
+}
+
+@media (min-width:768px) {
+    header {
+        .header-mobile {
+            justify-content: space-between;
+            .hamburger {
+                order: 2;
+                margin-right: 1em;
+            }
+            .navHeader {
+                order: 1;
+                display: flex;
+                width: 100%;
+                margin-left: 76px; 
+                padding: 0 1em;
+                li > a {
+                    font-size: 12px;
+                    padding: 0 2em;
+                    letter-spacing: 1.5px;
+                }
+            }
         }
     }
 }
