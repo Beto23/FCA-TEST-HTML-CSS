@@ -2,6 +2,10 @@ $primary-color: #fff;
 $hamburger: #cd3c33;
 header {
     background-color: $primary-color;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1000;
     .header-mobile {
         height: 50px;
         display: flex;
