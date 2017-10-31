@@ -3,6 +3,7 @@ const pug           = require('gulp-pug');
 const sass          = require('gulp-sass');
 const autoprefixer  = require('gulp-autoprefixer');
 const browserSync   = require('browser-sync').create();
+const browserify    = require('gulp-browserify');
 
 // Compile Sass & Inject Into Browser
 gulp.task('sass', function(){
@@ -32,12 +33,22 @@ gulp.task('images', function(){
         .pipe(gulp.dest('dist/images'))
 });
 
+gulp.task('js', function() {
+    return gulp.src(['src/app.js'])
+        .pipe(browserify({
+            insertGlobals : true
+        }))
+        .pipe(gulp.dest("dist/js"))
+        .pipe(browserSync.stream());
+});
+
 // Watch & serve
-gulp.task('serve', ['sass', 'pug', 'images'], function(){
+gulp.task('serve', ['sass', 'pug', 'images', 'js'], function(){
     browserSync.init({
         server: "dist"
     });
 
+    gulp.watch(['src/app.js'], ['js']);
     gulp.watch(['src/app.scss', 'src/components/**/*.scss'], ['sass']);
     gulp.watch(['src/**/*.pug'], ['pug']);
     gulp.watch(['src/index.pug']).on('change', browserSync.reload);
