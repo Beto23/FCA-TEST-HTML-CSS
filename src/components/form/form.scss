@@ -25,6 +25,25 @@
                         height: 80px;
                         padding: 5px 10px;
                     }
+                    .custom-radio-group {
+                        display: flex;
+                        .btn {
+                            border-radius: 0;
+                            border: solid 1px red;
+                            color: black;
+                            background: #fff;
+                        }
+                        .btn-primary.active {
+                            background: red;
+                            color: #fff;
+                        }
+                        .btn-primary:focus, .btn:focus, .btn-primary.focus {
+                            box-shadow: 0 0 0 0 !important;
+                        }
+                        .focus {
+                            box-shadow: 0 !important;
+                        }
+                    }
                 }
             }
             .title-container {
@@ -42,6 +61,17 @@
                     text-transform: uppercase;
                     font-size: 13px;
                     display: block;
+                }
+            }
+            .accept-conditions {
+                .btn-container{
+                    text-align: center;
+                    padding: 1.5em 0;
+                    .btn-send {
+                        background: #fff;
+                        border: solid 1px red;
+                        padding: .3em 2em;
+                    }
                 }
             }
         }

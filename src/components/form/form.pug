@@ -52,13 +52,31 @@ div.form
                     input.input-group-addon.form-input(placeholder="01 . 884 . 439 . 06")
                 div.form-container
                     label Desea ser contactado por
+                    div.btn-group.custom-radio-group(data-toggle='buttons')#contacto
+                        label.btn.btn-primary.active.col-4
+                            input#option1(type='radio', name='options', autocomplete='off', checked='')
+                            |  Teléfono
+                        label.btn.btn-primary.col-4
+                            input#option2(type='radio', name='options', autocomplete='off')
+                            |  Email
+                        label.btn.btn-primary.col-4
+                            input#option3(type='radio', name='options', autocomplete='off')
+                            |  Ambos
+
         section.custom-section
             div.title-container
                 h3.custom-section-title Forma de pago
                 span.custom-section-subtitle Personaliza tu cotización
             div.form-group
                 div.form-container
-                    label Elije tu tipo de pago
+                    label Elije tu forma de pago
+                    div.btn-group.custom-radio-group(data-toggle='buttons')#contacto
+                        label.btn.btn-primary.active.col-6
+                            input#option1(type='radio', name='options', autocomplete='off', checked='')
+                            |  Credito
+                        label.btn.btn-primary.col-6
+                            input#option2(type='radio', name='options', autocomplete='off')
+                            |  Contado
                 div.form-container
                     label Cantidad de enganche
                     input.input-group-addon.form-input(placeholder="80, 000.00")
@@ -83,5 +101,6 @@ div.form
                         label.form-check-label
                             input.form-check-input(type='checkbox', value='')
                             |     No deseo recibir promociones
-                button Enviar
+                div.btn-container
+                    button.btn-send Enviar
 
