@@ -15,6 +15,7 @@
     }
     .section-car-subtitle {
         font-size: .9em;
+        font-weight: bold;
     }
     .section-car-subtitle-2 {
         font-family: 'Playfair Display', serif;
@@ -27,5 +28,37 @@
     .section-car-image {
         height: 146px;
         width: 235px;
+    }
+}
+
+@media (min-width:768px) {
+    .section-car {
+        padding-top: 4.5em;
+        max-height: 438px;
+        .section-car-subtitle-2 {
+            font-size: 83px;
+        }
+        .section-car-subtitle {
+            display: table;
+            white-space: nowrap;
+        }
+        .section-car-subtitle:before, .section-car-subtitle:after{
+            border-top: 1px solid black;
+            content: '';
+            display: table-cell;
+            position: relative;
+            top: 0.5em;
+            width: 17%;
+        }
+        .section-car-subtitle:after {
+            left: 6.5%;
+        }
+        .section-car-subtitle:before {
+            right: 6.5%;
+        }
+        .section-car-image {
+            height: 222px;
+            width: 366px;
+        }
     }
 }
