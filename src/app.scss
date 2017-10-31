@@ -3,6 +3,7 @@
 body {
     background: blue;
     font-family: 'Loto Regular';
+    // overflow: hidden;
 }
 ul {
     list-style: none;
@@ -19,4 +20,10 @@ li > a {
     text-transform: uppercase;
     font-weight: bold;
 }
-@import 'components/header/header'
+
+h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+}
+@import 'components/header/header';
+@import 'components/form/form';

@@ -1,0 +1,41 @@
+.form {
+    background: #fff;
+    padding: 4em 1em 2em 1em;
+    .custom-section{
+        margin-bottom: 1em;
+        width: 18em;
+        .form-group{
+            .form-container {
+                margin-bottom: 1em;
+                label {
+                    padding-left: .5em;
+                    text-transform: uppercase;
+                    margin-bottom: .3em;
+                }
+                .form-select, .form-input, .form-area {
+                    border: 1px solid red;
+                    border-radius: 0;
+                    width: 100%;
+                    background: white;
+                    text-align: left;
+                }
+                .form-area {
+                    resize: none;
+                    height: 80px;
+                    padding: 5px 10px;
+                }
+            }
+        }
+        .title-container {
+            margin-bottom: 2em;
+            .custom-section-title, .custom-section-subtitle {
+                text-align: center;
+            }
+            .custom-section-subtitle {
+                text-transform: uppercase;
+                font-size: 13px;
+                display: block;
+            }
+        }
+    }
+}
