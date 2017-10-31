@@ -75,7 +75,7 @@ header {
 @media (min-width:1024px) {
     header {
         .header-mobile {
-            flex-direction: center;
+            justify-content: center;
             .hamburger {
                 margin-right: 0;
                 margin-left: 2.5em;
