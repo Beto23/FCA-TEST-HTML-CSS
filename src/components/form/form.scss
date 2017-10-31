@@ -77,3 +77,25 @@
         }
     }
 }
+
+@media (min-width:768px) {
+    .form {
+        width: 95%;
+        margin: 0 auto;
+    }
+    .form .form-box .custom-section .form-group {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .form .form-box .custom-section .form-group .form-container .form-area {
+        height: 165px;
+    }
+
+    .form .form-box .accept-conditions {
+        display: flex;
+        .btn-container {
+            text-align: right !important;
+            padding: 0 15px !important;
+        }
+    }
+}

@@ -2,28 +2,28 @@ div.form
     div.form-box
         section.custom-section
             div.form-group
-                div.form-container
+                div.form-container.col-md-6
                     label Modelo
                     select.custom-select.form-select
                         option(value='') Selecciona
                         option(value='saab') Saab
                         option(value='mercedes') Mercedes
                         option(value='audi') Audi    
-                div.form-container
+                div.form-container.col-md-6
                     label Versión
                     select.custom-select.form-select
                         option(value='') Selecciona
                         option(value='saab') Saab
                         option(value='mercedes') Mercedes
                         option(value='audi') Audi    
-                div.form-container
+                div.form-container.col-md-6
                     label Estado
                     select.custom-select.form-select
                         option(value='') Selecciona
                         option(value='saab') Saab
                         option(value='mercedes') Mercedes
                         option(value='audi') Audi    
-                div.form-container
+                div.form-container.col-md-6
                     label Distribuidor
                     select.custom-select.form-select
                         option(value='') Selecciona
@@ -35,22 +35,22 @@ div.form
                 h3.custom-section-title Datos personales
                 span.custom-section-subtitle Escribe tus datos personales
             div.form-group
-                div.form-container
+                div.form-container.col-md-6
                     label Nombre (s)
                     input.input-group-addon.form-input(placeholder="EJ. JUAN")        
-                div.form-container
+                div.form-container.col-md-6
                     label Apellido paterno
                     input.input-group-addon.form-input(placeholder="EJ. LOPEZ")        
-                div.form-container
+                div.form-container.col-md-6
                     label Apellido materno
                     input.input-group-addon.form-input(placeholder="EJ. TOVAR")        
-                div.form-container
+                div.form-container.col-md-6
                     label Email
                     input.input-group-addon.form-input(placeholder="TU@EMAIL.COM")        
-                div.form-container
+                div.form-container.col-md-6
                     label Teléfono
                     input.input-group-addon.form-input(placeholder="01 . 884 . 439 . 06")
-                div.form-container
+                div.form-container.col-md-12
                     label Desea ser contactado por
                     div.btn-group.custom-radio-group(data-toggle='buttons')#contacto
                         label.btn.btn-primary.active.col-4
@@ -68,7 +68,7 @@ div.form
                 h3.custom-section-title Forma de pago
                 span.custom-section-subtitle Personaliza tu cotización
             div.form-group
-                div.form-container
+                div.form-container.col-md-12
                     label Elije tu forma de pago
                     div.btn-group.custom-radio-group(data-toggle='buttons')#contacto
                         label.btn.btn-primary.active.col-6
@@ -77,10 +77,10 @@ div.form
                         label.btn.btn-primary.col-6
                             input#option2(type='radio', name='options', autocomplete='off')
                             |  Contado
-                div.form-container
+                div.form-container.col-md-6
                     label Cantidad de enganche
                     input.input-group-addon.form-input(placeholder="80, 000.00")
-                div.form-container
+                div.form-container.col-md-6
                     label Plazo
                     input.input-group-addon.form-input(placeholder="80, 000.00")
         section.custom-section
@@ -88,11 +88,11 @@ div.form
                 h3.custom-section-title Comentarios
                 span.custom-section-subtitle Nos importan tus comentarios
             div.form-group
-                div.form-container
+                div.form-container.col-md-12
                     label ¿Dudas? ¿Comentarios?
                     textarea( class="form-area" placeholder="Escribenos")
             div.accept-conditions
-                div.checbox-container
+                div.checbox-container.col-md-6
                     div.form-check
                         label.form-check-label
                             input.form-check-input(type='checkbox', value='')
@@ -101,6 +101,6 @@ div.form
                         label.form-check-label
                             input.form-check-input(type='checkbox', value='')
                             |     No deseo recibir promociones
-                div.btn-container
+                div.btn-container.col-md-6
                     button.btn-send Enviar
 
