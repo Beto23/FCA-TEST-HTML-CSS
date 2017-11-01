@@ -3,7 +3,7 @@
 ### Installation
 
 Url web:
-[beto23.github.io/FCA-TEST-HTML-CSS](https://beto23.github.io/FCA-TEST-HTML-CSS/dist/).
+[beto23.github.io/FCA-TEST-HTML-CSS/dist/](https://beto23.github.io/FCA-TEST-HTML-CSS/dist/).
 
 Para instalar:
 
