@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i|Playfair+Display:400,400i,700,700i,900,900i");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:900i");
+/* line 3, src/app.scss */
+body {
+  background: gray;
+  font-family: 'Loto Regular'; }
+
+/* line 8, src/app.scss */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+/* line 14, src/app.scss */
+a {
+  text-decoration: none;
+  color: black; }
+
+/* line 19, src/app.scss */
+li > a {
+  text-transform: uppercase;
+  font-weight: bold; }
+
+/* line 24, src/app.scss */
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0; }
+
+/* line 29, src/app.scss */
+.app {
+  padding-bottom: 5em;
+  background-image: -webkit-linear-gradient(90deg, red 50%, #4957d1 50%); }
+
+/* line 3, src/components/header/header.scss */
+header {
+  background-color: #fff;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1000; }
+  /* line 9, src/components/header/header.scss */
+  header .header-mobile {
+    height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    /* line 14, src/components/header/header.scss */
+    header .header-mobile .logo {
+      padding-top: 43px; }
+    /* line 17, src/components/header/header.scss */
+    header .header-mobile .hamburger {
+      margin-right: 1.9em;
+      cursor: pointer; }
+      /* line 20, src/components/header/header.scss */
+      header .header-mobile .hamburger .line {
+        width: 18px;
+        height: 3px;
+        background-color: #cd3c33;
+        margin: 3px 0;
+        display: block; }
+    /* line 29, src/components/header/header.scss */
+    header .header-mobile .navHeader {
+      display: none; }
+  /* line 33, src/components/header/header.scss */
+  header .navigation {
+    background: #fff; }
+    /* line 35, src/components/header/header.scss */
+    header .navigation .menu-list {
+      height: 0;
+      overflow: hidden;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-transition: height .3s ease;
+      transition: height .3s ease; }
+      /* line 43, src/components/header/header.scss */
+      header .navigation .menu-list li {
+        padding: 1em; }
+    /* line 47, src/components/header/header.scss */
+    header .navigation .menu-list--show {
+      padding: 1em 0 0 0;
+      height: 20em; }
+
+@media (min-width: 768px) {
+  /* line 56, src/components/header/header.scss */
+  header .header-mobile {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    /* line 58, src/components/header/header.scss */
+    header .header-mobile .hamburger {
+      -webkit-box-ordinal-group: 3;
+          -ms-flex-order: 2;
+              order: 2;
+      margin-right: 1em; }
+    /* line 62, src/components/header/header.scss */
+    header .header-mobile .navHeader {
+      -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+              order: 1;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      /* line 65, src/components/header/header.scss */
+      header .header-mobile .navHeader li > a {
+        font-size: 12px;
+        padding: 0 2em;
+        letter-spacing: 1.5px; } }
+
+@media (min-width: 1024px) {
+  /* line 77, src/components/header/header.scss */
+  header .header-mobile {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    /* line 79, src/components/header/header.scss */
+    header .header-mobile .hamburger {
+      margin-right: 0;
+      margin-left: 2.5em; } }
+
+/* line 3, src/components/form/form.scss */
+.form .form-box {
+  background: #fff;
+  padding: 3.5em 1em 2em 1em; }
+  /* line 6, src/components/form/form.scss */
+  .form .form-box .custom-section {
+    margin-bottom: 1em; }
+    /* line 10, src/components/form/form.scss */
+    .form .form-box .custom-section .form-group .form-container {
+      margin-bottom: 1em; }
+      /* line 12, src/components/form/form.scss */
+      .form .form-box .custom-section .form-group .form-container label {
+        padding-left: .5em;
+        text-transform: uppercase;
+        margin-bottom: .3em; }
+      /* line 17, src/components/form/form.scss */
+      .form .form-box .custom-section .form-group .form-container .form-select, .form .form-box .custom-section .form-group .form-container .form-input, .form .form-box .custom-section .form-group .form-container .form-area {
+        border: 1px solid red;
+        border-radius: 0;
+        width: 100%;
+        background: white;
+        text-align: left; }
+      /* line 24, src/components/form/form.scss */
+      .form .form-box .custom-section .form-group .form-container .form-area {
+        resize: none;
+        height: 80px;
+        padding: 5px 10px; }
+      /* line 29, src/components/form/form.scss */
+      .form .form-box .custom-section .form-group .form-container .custom-radio-group {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        /* line 31, src/components/form/form.scss */
+        .form .form-box .custom-section .form-group .form-container .custom-radio-group .btn {
+          border-radius: 0;
+          border: solid 1px red;
+          color: black;
+          background: #fff; }
+        /* line 37, src/components/form/form.scss */
+        .form .form-box .custom-section .form-group .form-container .custom-radio-group .btn-primary.active {
+          background: red;
+          color: #fff; }
+        /* line 41, src/components/form/form.scss */
+        .form .form-box .custom-section .form-group .form-container .custom-radio-group .btn-primary:focus, .form .form-box .custom-section .form-group .form-container .custom-radio-group .btn:focus, .form .form-box .custom-section .form-group .form-container .custom-radio-group .btn-primary.focus {
+          -webkit-box-shadow: 0 0 0 0 !important;
+                  box-shadow: 0 0 0 0 !important; }
+        /* line 44, src/components/form/form.scss */
+        .form .form-box .custom-section .form-group .form-container .custom-radio-group .focus {
+          -webkit-box-shadow: 0 !important;
+                  box-shadow: 0 !important; }
+    /* line 50, src/components/form/form.scss */
+    .form .form-box .custom-section .title-container {
+      margin-bottom: 2em; }
+      /* line 52, src/components/form/form.scss */
+      .form .form-box .custom-section .title-container .custom-section-title, .form .form-box .custom-section .title-container .custom-section-subtitle {
+        text-align: center; }
+      /* line 55, src/components/form/form.scss */
+      .form .form-box .custom-section .title-container .custom-section-title {
+        font-family: 'Playfair Display', serif;
+        font-weight: bold;
+        font-style: italic;
+        font-size: 34px;
+        color: red; }
+      /* line 62, src/components/form/form.scss */
+      .form .form-box .custom-section .title-container .custom-section-subtitle {
+        text-transform: uppercase;
+        font-size: 13px;
+        display: block; }
+    /* line 69, src/components/form/form.scss */
+    .form .form-box .custom-section .accept-conditions .btn-container {
+      text-align: center;
+      padding: 1.5em 0; }
+      /* line 72, src/components/form/form.scss */
+      .form .form-box .custom-section .accept-conditions .btn-container .btn-send {
+        background: #fff;
+        border: solid 1px red;
+        padding: .3em 2em; }
+
+@media (min-width: 768px) {
+  /* line 84, src/components/form/form.scss */
+  .form {
+    width: 95%;
+    margin: 0 auto; }
+  /* line 88, src/components/form/form.scss */
+  .form .form-box .custom-section .form-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  /* line 92, src/components/form/form.scss */
+  .form .form-box .custom-section .form-group .form-container .form-area {
+    height: 165px; }
+  /* line 96, src/components/form/form.scss */
+  .form .form-box .custom-section .title-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  /* line 101, src/components/form/form.scss */
+  .form .form-box .custom-section .title-container .custom-section-title {
+    display: table;
+    white-space: nowrap; }
+  /* line 105, src/components/form/form.scss */
+  .form .form-box .custom-section .title-container .custom-section-title:before, .form .form-box .custom-section .title-container .custom-section-title:after {
+    border-top: 1px solid red;
+    content: '';
+    display: table-cell;
+    position: relative;
+    top: 0.5em;
+    width: 32%; }
+  /* line 113, src/components/form/form.scss */
+  .form .form-box .custom-section .title-container .custom-section-title:after {
+    left: 6.5%; }
+  /* line 116, src/components/form/form.scss */
+  .form .form-box .custom-section .title-container .custom-section-title:before {
+    right: 6.5%; }
+  /* line 120, src/components/form/form.scss */
+  .form .form-box .accept-conditions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    /* line 122, src/components/form/form.scss */
+    .form .form-box .accept-conditions .btn-container {
+      text-align: right !important;
+      padding: 0 15px !important; } }
+
+@media (min-width: 1024px) {
+  /* line 130, src/components/form/form.scss */
+  .form {
+    width: 74%; } }
+
+/* line 1, src/components/car/car.scss */
+.section-car {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 3.8em;
+  max-height: 281px; }
+  /* line 8, src/components/car/car.scss */
+  .section-car .section-car-title, .section-car .section-car-subtitle {
+    text-transform: uppercase; }
+  /* line 11, src/components/car/car.scss */
+  .section-car .section-car-title {
+    font-size: 13px;
+    padding: 1em 0;
+    color: #fff; }
+  /* line 16, src/components/car/car.scss */
+  .section-car .section-car-subtitle {
+    font-size: .9em;
+    font-weight: bold; }
+  /* line 20, src/components/car/car.scss */
+  .section-car .section-car-subtitle-2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-style: italic;
+    color: #fff;
+    font-size: 43px;
+    margin: 0; }
+  /* line 28, src/components/car/car.scss */
+  .section-car .section-car-image {
+    height: 146px;
+    width: 235px; }
+
+@media (min-width: 768px) {
+  /* line 35, src/components/car/car.scss */
+  .section-car {
+    padding-top: 4.5em;
+    max-height: 438px; }
+    /* line 38, src/components/car/car.scss */
+    .section-car .section-car-subtitle-2 {
+      font-size: 83px; }
+    /* line 41, src/components/car/car.scss */
+    .section-car .section-car-subtitle {
+      display: table;
+      white-space: nowrap; }
+    /* line 45, src/components/car/car.scss */
+    .section-car .section-car-subtitle:before, .section-car .section-car-subtitle:after {
+      border-top: 1px solid black;
+      content: '';
+      display: table-cell;
+      position: relative;
+      top: 0.5em;
+      width: 17%; }
+    /* line 53, src/components/car/car.scss */
+    .section-car .section-car-subtitle:after {
+      left: 6.5%; }
+    /* line 56, src/components/car/car.scss */
+    .section-car .section-car-subtitle:before {
+      right: 6.5%; }
+    /* line 59, src/components/car/car.scss */
+    .section-car .section-car-image {
+      height: 222px;
+      width: 366px; } }
