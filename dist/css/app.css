@@ -154,80 +154,82 @@ header {
         border: 1px solid red;
         border-radius: 0;
         width: 100%;
-        background: white;
         text-align: left; }
-      /* line 24, src/components/form/form.scss */
+      /* line 23, src/components/form/form.scss */
+      .form .form-box .custom-section .form-group .form-container .input-group-addon {
+        background: white; }
+      /* line 26, src/components/form/form.scss */
       .form .form-box .custom-section .form-group .form-container .form-area {
         resize: none;
         height: 80px;
         padding: 5px 10px; }
-      /* line 29, src/components/form/form.scss */
+      /* line 31, src/components/form/form.scss */
       .form .form-box .custom-section .form-group .form-container .custom-radio-group {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex; }
-        /* line 31, src/components/form/form.scss */
+        /* line 33, src/components/form/form.scss */
         .form .form-box .custom-section .form-group .form-container .custom-radio-group .btn {
           border-radius: 0;
           border: solid 1px red;
           color: black;
           background: #fff; }
-        /* line 37, src/components/form/form.scss */
+        /* line 39, src/components/form/form.scss */
         .form .form-box .custom-section .form-group .form-container .custom-radio-group .btn-primary.active {
           background: red;
           color: #fff; }
-        /* line 41, src/components/form/form.scss */
+        /* line 43, src/components/form/form.scss */
         .form .form-box .custom-section .form-group .form-container .custom-radio-group .btn-primary:focus, .form .form-box .custom-section .form-group .form-container .custom-radio-group .btn:focus, .form .form-box .custom-section .form-group .form-container .custom-radio-group .btn-primary.focus {
           -webkit-box-shadow: 0 0 0 0 !important;
                   box-shadow: 0 0 0 0 !important; }
-        /* line 44, src/components/form/form.scss */
+        /* line 46, src/components/form/form.scss */
         .form .form-box .custom-section .form-group .form-container .custom-radio-group .focus {
           -webkit-box-shadow: 0 !important;
                   box-shadow: 0 !important; }
-    /* line 50, src/components/form/form.scss */
+    /* line 52, src/components/form/form.scss */
     .form .form-box .custom-section .title-container {
       margin-bottom: 2em; }
-      /* line 52, src/components/form/form.scss */
+      /* line 54, src/components/form/form.scss */
       .form .form-box .custom-section .title-container .custom-section-title, .form .form-box .custom-section .title-container .custom-section-subtitle {
         text-align: center; }
-      /* line 55, src/components/form/form.scss */
+      /* line 57, src/components/form/form.scss */
       .form .form-box .custom-section .title-container .custom-section-title {
         font-family: 'Playfair Display', serif;
         font-weight: bold;
         font-style: italic;
         font-size: 34px;
         color: red; }
-      /* line 62, src/components/form/form.scss */
+      /* line 64, src/components/form/form.scss */
       .form .form-box .custom-section .title-container .custom-section-subtitle {
         text-transform: uppercase;
         font-size: 13px;
         display: block; }
-    /* line 69, src/components/form/form.scss */
+    /* line 71, src/components/form/form.scss */
     .form .form-box .custom-section .accept-conditions .btn-container {
       text-align: center;
       padding: 1.5em 0; }
-      /* line 72, src/components/form/form.scss */
+      /* line 74, src/components/form/form.scss */
       .form .form-box .custom-section .accept-conditions .btn-container .btn-send {
         background: #fff;
         border: solid 1px red;
         padding: .3em 2em; }
 
 @media (min-width: 768px) {
-  /* line 84, src/components/form/form.scss */
+  /* line 86, src/components/form/form.scss */
   .form {
     width: 95%;
     margin: 0 auto; }
-  /* line 88, src/components/form/form.scss */
+  /* line 90, src/components/form/form.scss */
   .form .form-box .custom-section .form-group {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
-  /* line 92, src/components/form/form.scss */
+  /* line 94, src/components/form/form.scss */
   .form .form-box .custom-section .form-group .form-container .form-area {
     height: 165px; }
-  /* line 96, src/components/form/form.scss */
+  /* line 98, src/components/form/form.scss */
   .form .form-box .custom-section .title-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -239,11 +241,11 @@ header {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-  /* line 101, src/components/form/form.scss */
+  /* line 103, src/components/form/form.scss */
   .form .form-box .custom-section .title-container .custom-section-title {
     display: table;
     white-space: nowrap; }
-  /* line 105, src/components/form/form.scss */
+  /* line 107, src/components/form/form.scss */
   .form .form-box .custom-section .title-container .custom-section-title:before, .form .form-box .custom-section .title-container .custom-section-title:after {
     border-top: 1px solid red;
     content: '';
@@ -251,24 +253,24 @@ header {
     position: relative;
     top: 0.5em;
     width: 32%; }
-  /* line 113, src/components/form/form.scss */
+  /* line 115, src/components/form/form.scss */
   .form .form-box .custom-section .title-container .custom-section-title:after {
     left: 6.5%; }
-  /* line 116, src/components/form/form.scss */
+  /* line 118, src/components/form/form.scss */
   .form .form-box .custom-section .title-container .custom-section-title:before {
     right: 6.5%; }
-  /* line 120, src/components/form/form.scss */
+  /* line 122, src/components/form/form.scss */
   .form .form-box .accept-conditions {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-    /* line 122, src/components/form/form.scss */
+    /* line 124, src/components/form/form.scss */
     .form .form-box .accept-conditions .btn-container {
       text-align: right !important;
       padding: 0 15px !important; } }
 
 @media (min-width: 1024px) {
-  /* line 130, src/components/form/form.scss */
+  /* line 132, src/components/form/form.scss */
   .form {
     width: 74%; } }
 
