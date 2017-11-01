@@ -18,8 +18,10 @@ $lineSpace: 6.5%;
                         border: 1px solid red;
                         border-radius: 0;
                         width: 100%;
-                        background: white;
                         text-align: left;
+                    }
+                    .input-group-addon {
+                        background: white;
                     }
                     .form-area {
                         resize: none;
