@@ -1,3 +1,4 @@
+$lineSpace: 6.5%;
 .form {
     .form-box {
         background: #fff;
@@ -56,6 +57,7 @@
                     font-weight: bold;
                     font-style: italic;
                     font-size: 34px;
+                    color: red;
                 }
                 .custom-section-subtitle {
                     text-transform: uppercase;
@@ -89,6 +91,30 @@
     }
     .form .form-box .custom-section .form-group .form-container .form-area {
         height: 165px;
+    }
+
+    .form .form-box .custom-section .title-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .form .form-box .custom-section .title-container .custom-section-title {
+        display: table;
+        white-space: nowrap;
+    }
+    .form .form-box .custom-section .title-container .custom-section-title:before, .form .form-box .custom-section .title-container .custom-section-title:after{
+        border-top: 1px solid red;
+        content: '';
+        display: table-cell;
+        position: relative;
+        top: 0.5em;
+        width: 32%;
+    }
+    .form .form-box .custom-section .title-container .custom-section-title:after {
+        left: $lineSpace;
+    }
+    .form .form-box .custom-section .title-container .custom-section-title:before{
+        right: $lineSpace;
     }
 
     .form .form-box .accept-conditions {
